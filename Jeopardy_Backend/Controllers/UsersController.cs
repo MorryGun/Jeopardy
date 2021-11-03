@@ -1,4 +1,5 @@
-﻿using Jeopardy_Backend.Models;
+﻿using Jeopardy_Backend.Constants;
+using Jeopardy_Backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace Backend.Controllers
 {
     [Produces("application/json")]
-    [Route("api/User")]
+    [Route(ApiConstants.RegisterRout)]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -38,7 +39,7 @@ namespace Backend.Controllers
             return Ok(CreateToken(user));
         }
 
-        [HttpPost("login")]
+        [HttpPost(ApiConstants.LoginEndpoint)]
         public async Task<IActionResult> Login([FromBody] Credentials credentials)
         {
             var result = await signInManager.PasswordSignInAsync(credentials.Email, credentials.Password, false, false);
