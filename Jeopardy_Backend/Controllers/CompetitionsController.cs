@@ -1,4 +1,5 @@
-﻿using Jeopardy_Backend.Models;
+﻿using Jeopardy_Backend.Constants;
+using Jeopardy_Backend.Models;
 using Jeopardy_Backend.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Jeopardy_Backend.Controllers
 {
-    [Route("api/Competition")]
+    [Route(ApiConstants.CompetitionsRout)]
     [ApiController]
     public class CompetitionsController : ControllerBase
     {
