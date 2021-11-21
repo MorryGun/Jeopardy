@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy_Backend", "Jeopard
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy_Backend_UnitTests", "Jeopardy_Backend_UnitTests\Jeopardy_Backend_UnitTests.csproj", "{220C9D99-5A21-486C-9931-106F3E1C7202}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy_Backend_IntegrationTests", "Jeopardy_Backend_IntegrationTests\Jeopardy_Backend_IntegrationTests.csproj", "{23B6E689-CE58-4D08-AFFE-38ED6771B0E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy_Backend_IntegrationTests", "Jeopardy_Backend_IntegrationTests\Jeopardy_Backend_IntegrationTests.csproj", "{23B6E689-CE58-4D08-AFFE-38ED6771B0E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy_Backend_TestCommon", "Jeopardy_Backend_TestCommon\Jeopardy_Backend_TestCommon.csproj", "{1C181C07-2443-47A7-A9D8-6895FC55B541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeopardy_Backend_TestCommon", "Jeopardy_Backend_TestCommon\Jeopardy_Backend_TestCommon.csproj", "{1C181C07-2443-47A7-A9D8-6895FC55B541}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7417DB7D-11BA-4625-956F-1063509D5096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1C181C07-2443-47A7-A9D8-6895FC55B541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C181C07-2443-47A7-A9D8-6895FC55B541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C181C07-2443-47A7-A9D8-6895FC55B541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7417DB7D-11BA-4625-956F-1063509D5096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7417DB7D-11BA-4625-956F-1063509D5096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7417DB7D-11BA-4625-956F-1063509D5096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7417DB7D-11BA-4625-956F-1063509D5096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

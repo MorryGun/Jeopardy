@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  jeopardy.backend:
+    #build:
+    #  context: .
+    #  dockerfile: Jeopardy_Backend/Dockerfile
+    image: morrygun/jeopardybackend
+    environment:
+      - ASPNETCORE_URLS=http://*:44311
+    tty: true
+    ports:  
+      - '44311:44311'
+    expose:  
+      - 44311
+
+  jeopardy.frontend:
+    image: morrygun/jeopardyfrontend
+    ports:  
+      - '8080:80'
+    expose:  
+      - 8080
+
+  sqlserverService:  
+    image: mcr.microsoft.com/mssql/server:2019-latest  
+    hostname: 'sqlserver'  
+    environment:  
+      ACCEPT_EULA: Y  
+      SA_PASSWORD: "Ks@123123"  
+    volumes:  
+      - ./data/mssql:/var/opt/mssql3  
+    ports:  
+      - '1433:1433'  
+    expose:  
+      - 1433 

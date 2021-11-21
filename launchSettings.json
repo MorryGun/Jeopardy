@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "jeopardy.backend",
+      "serviceActions": {
+        "jeopardy.frontend": "StartWithoutDebugging",
+        "jeopardy.backend": "StartDebugging",
+        "sqlserverService": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/api/player"
+    }
+  }
+}

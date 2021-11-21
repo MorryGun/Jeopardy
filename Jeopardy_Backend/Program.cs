@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace Jeopardy_Backend
 {
@@ -14,7 +15,11 @@ namespace Jeopardy_Backend
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseKestrel()
+                              .UseContentRoot(Directory.GetCurrentDirectory())
+                              .UseUrls("http://*:44311")
+                              .UseIISIntegration()
+                              .UseStartup<Startup>();
                 });
     }
 }
