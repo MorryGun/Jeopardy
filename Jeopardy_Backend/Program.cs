@@ -15,7 +15,7 @@ namespace Jeopardy_Backend
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseKestrel()
+                    webBuilder
                               .UseContentRoot(Directory.GetCurrentDirectory())
                               .UseUrls("http://*:44311")
                               .UseIISIntegration()
