@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch: 'IIS_integration', url: 'https://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@github.com/MorryGun/Jeopardy/'
+                git branch: 'main', url: 'https://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@github.com/MorryGun/Jeopardy/'
             }
         }
         stage('restore') {
