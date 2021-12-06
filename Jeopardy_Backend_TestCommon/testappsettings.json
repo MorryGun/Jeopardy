@@ -1,0 +1,8 @@
+{
+  "TestBaseAddress": "https://localhost",
+  "TestUsername": "Test@test.test",
+  "TestPassword": "Test@123",
+  "TestFleName": "TestItem",
+  "TestFleContent": "This is sample content...",
+  "BucketName": "morrygun-s3"
+}
